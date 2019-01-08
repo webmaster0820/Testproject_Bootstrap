@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SHOP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="checkout-structure.css">
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <input type="checkbox" id="checkbox-toggle">
+            <label for="checkbox-toggle">
+                <img src="images/menu.svg">
+            </label>
+            <ul>
+                <li><a href="display.html">Men's Outerwear</a></li>
+                <li><a href="display.html">Ladies Outerwear</a></li>
+                <li><a href="display.html">Men's T-Shirts</a></li>
+                <li><a href="display.html">Ladies T-Shirts</a></li>
+            </ul>
+        </div>
+        <div id="site-name"><a href="index.html">SHOP</a></div>
+        <div id="cart">
+            <a href="cart.html"><img src="images/cart.svg"></a>
+        </div>
+    </header>
+    <nav>
+        <span>
+			<a href="display.html">&nbsp Men's Outerwear &nbsp</a>
+		</span>
+        <span>
+			<a href="display.html">&nbsp Ladies Outerwear &nbsp</a>
+		</span>
+        <span>
+			<a href="display.html">&nbsp Men's T-Shirts &nbsp</a>
+		</span>
+        <span>
+			<a href="display.html">&nbsp Ladies T-Shirts &nbsp</a>
+		</span>
+    </nav>
+    <section id="section-name">
+        <div>Checkout</div>
+        <div class="description">Shop is a demo app - form data will not be sent</div>
+    </section>
+    <section class="checkout">
+        <div class="account-info">
+            <div class="dark">Account Information</div>
+            <div class="entry">
+                <input type="email" name="mail" autofocus="" required="">
+                <label for="email">Email</label>
+            </div>
+            <div class="entry">
+                <input type="" name="phone-numbber" autofocus="" required="">
+                <label for="number">Phone Number</label>
+            </div>
+            <div class="dark">Shipping Address</div>
+            <div class="entry">
+                <input type="text" name="address" autofocus="" required="">
+                <label for="address">Address</label>
+            </div>
+            <div class="entry">
+                <input type="text" name="city" autofocus="" required="">
+                <label for="city">City</label>
+            </div>
+            <div class="entry">
+                <input type="text" name="State" autofocus="" required="">
+                <label for="state">State/Province</label>
+            </div>
+            <div class="entry">
+                <input type="text" name="zip" autofocus="" required="">
+                <label for="zip">Zip/Postal Code</label>
+            </div>
+            <div class="dark">Country</div>
+            <select value="country">
+                <option value="Unites States">United States</option>
+                <option value="Mexico">Mexico</option>
+            </select>
+            <div class="dark">Billing Address</div>
+            <input type="checkbox" required="" id="checkbox"> Use different billing address
+            <div class="different-billing-address">
+                <div class="entry">
+                    <input type="text" name="address" autofocus="" required="">
+                    <label for="address">Address</label>
+                </div>
+                <div class="entry">
+                    <input type="text" name="city" autofocus="" required="">
+                    <label for="city">City</label>
+                </div>
+                <div class="entry">
+                    <input type="text" name="State" autofocus="" required="">
+                    <label for="state">State/Province</label>
+                </div>
+                <div class="entry">
+                    <input type="text" name="zip" autofocus="" required="">
+                    <label for="zip">Zip/Postal Code</label>
+                </div>
+                <div class="dark">Country</div>
+                <select value="country">
+                    <option value="Unites States">United States</option>
+                    <option value="Mexico">Mexico</option>
+                </select>
+            </div>
+        </div>
+        <div class="payment-method">
+            <div class="dark">Payment Method</div>
+            <div class="entry">
+                <input type="text" name="cardholder-name" autofocus="" required="">
+                <label for="cardholder-name">Cardholder Name</label>
+            </div>
+            <div class="entry">
+                <input type="text" name="card-number" autofocus="" required="">
+                <label for="card-number"> Card Number</label>
+            </div>
+            <div class="dark">Expiry</div>
+            <div id="date">
+                <select>
+                    <option>Jan</option>
+                    <option>Feb</option>
+                    <option>Mar</option>
+                    <option>Apr</option>
+                    <option>May</option>
+                    <option>Jun</option>
+                    <option>Jul</option>
+                    <option>Aug</option>
+                    <option>Sep</option>
+                    <option>Oct</option>
+                    <option>Nov</option>
+                    <option>Dec</option>
+                </select>
+                <select>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                </select>
+                <div class="entry" id="cvv">
+                    <input type="text" name="cvv" autofocus="" required="">
+                    <label for="cvv">CVV</label>
+                </div>
+            </div>
+            <div>
+                <div class="dark">Order Summary</div>
+                <div class="order">
+                    <span>Anvil L/S Crew Neck - Grey</span>
+                    <span>$44.30</span>
+                </div>
+                <div class="total">
+                    <span>Total</span>
+                    <span>$44.30</span>
+                </div>
+            </div>
+            <a href="index.html">PLACE ORDER</a>
+        </div>
+    </section>
+    <footer>
+        <div>Made By Gold Time</div>
+        <div class="site-type">DEMO ONLY</div>
+    </footer>
+</body>
+
+</html>

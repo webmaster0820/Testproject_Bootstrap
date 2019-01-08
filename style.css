@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', 'Noto', sans-serif;
+    font-size: 15px;
+}
+
+.sidebar {
+    position: absolute;
+    display: none;
+    border: 1px solid white;
+    background-color: white;
+    z-index: 1;
+    height: 100%;
+    width: 45%;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+}
+
+footer {
+    text-align: center;
+}
+
+#section-name {
+    text-align: center;
+}
+
+#cart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    margin: 20px;
+}
+
+
+#cart>a {
+    width: 30px;
+    height: auto;
+}
+
+img {
+    object-fit: contain;
+    background-size: cover;
+    max-width: 85%;
+}
+
+#cover-board {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+#site-name {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    flex: 1;
+}
+
+.dark {
+    color: black;
+    font-weight: bold;
+}
+
+.description {
+    color: gray;
+}
+
+.site-type {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a [href="display.html"] span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cover {
+    width: 100%;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#mens-outerwear-cover {
+    background-image: url("mens_outerwear.jpg");
+}
+
+#ladies-outerwear-cover {
+    background-image: url("ladies_outerwear.jpg");
+}
+
+#mens-tshirts-cover {
+    background-image: url("mens_tshirts.jpg");
+}
+
+#ladies-tshirts-cover {
+    background-image: url("ladies_tshirts.jpg");
+}
+
+.section-description>div {
+    margin: 20px;
+}
+/**/
+
+.dropdown {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+select {
+    border: none;
+    background-color: transparent;
+}
+
+#checkbox-toggle {
+    display: none;
+}
+
+
+.dropdown>label {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+
+.dropdown ul {
+    position: absolute;
+    top: 0px;
+    list-style: none;
+    text-align: left;
+    width: 0px;
+    background-color: white;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.dropdown ul li {
+    padding: 15px;
+    color: gray;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+.dropdown ul li:hover {
+    background-color: gray;
+    color: white;
+}
+
+.dropdown ul li a {
+    font-size: 13px;
+    color: inherit;
+    text-decoration: none;
+}
+
+input[type=checkbox]:checked~ul {
+    display: block;
+    position: fixed;
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    transition: width 0.3s;
+}
+input[type=checkbox]:checked+label {
+    position: fixed;
+    top:20px;
+    left:-10px;
+    
+  
+}
+
+
+
+
+nav {
+    display: none;
+}
+
+
+.entry {
+    position: relative;
+    width: 100%;
+    margin:0px;
+}
+
+
+input {
+    outline: none;
+    height: 80px;
+    width: 100%;
+    background: transparent;
+    z-index: 1;
+    border: none;
+    margin-top: 0px;
+    border-bottom: 2px solid #ddd;
+}
+
+.entry>label {
+    color: #aaa;
+    position: absolute;
+    left: 0px;
+    top: auto;
+    bottom: auto;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+.entry input:focus+label {
+    font-size: 10px;
+    top: -10px;
+    color: #444;
+    transition: 0.3s ease;
+}
+
+.entry input:focus {
+    transform: scaleX(1);
+    border-bottom: 2px solid black;
+}
+
+
+@media screen and (min-width:768px) {
+    .dropdown {
+        display: none;
+    }
+
+    nav {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-left:auto; 
+        margin-right:auto; 
+        font-size: 13px;
+        max-width:600px;
+        display: flex;
+        justify-content: space-around;
+    }
+}

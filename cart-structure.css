@@ -1,0 +1,149 @@
+table {
+    width: 100%;
+}
+
+.grid {
+    margin: 5% 15%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-columns: minmax(max-content, 2fr);
+    justify-content: space-around;
+}
+
+
+img {
+    width: auto;
+    height: 100%;
+}
+
+.product-img {
+    width: 100%;
+    height: 80px;
+}
+
+.section-name {
+    text-align: center;
+    margin-top: 5%;
+}
+.cart-title{
+    font-size: 16px;
+}
+
+.total {
+    text-align: right;
+    margin: 20px;
+    font-size: 13px;
+}
+
+footer {
+    display: none;
+}
+
+.checkout {
+    text-decoration: none;
+    padding: 20px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    background-color: #1d2254;
+    width: 100%;
+    height: 3%;
+}
+
+.checkout>a {
+    padding-left:30px;
+    padding-right:30px;
+    color:white;
+    font-size: 20px;
+}
+
+.product-img {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    margin: auto;
+}
+
+.product-name {
+    grid-column: 2/span 5;
+    margin: auto;
+}
+
+.product-qty {
+    grid-column: 2/span 2;
+    grid-row: 2/3;
+    margin: auto;
+}
+
+.product-size {
+    grid-column: 4/span 2;
+    grid-row: 2/3;
+    margin: auto;
+}
+
+.product-price {
+    grid-column: 6/span 2;
+    grid-row: 2/3;
+    margin: auto;
+}
+
+.discard {
+    grid-column: 7/8;
+    grid-row: 1/2;
+    margin-left: auto;
+}
+.total{
+    grid-column: 1/8;
+    grid-row: 3/4;
+}
+
+@media screen and (min-width:768px) {
+    .checkout {
+        border: 2px solid black;
+        padding: 10px;
+        font-size: 13px;
+        background-color: transparent;
+        border: 2px solid black;
+        position: static;
+        color: black;
+    }
+    .checkout a{
+        color:black;
+        font-size:15px;
+    }
+    footer {
+        display: block;
+        position: absolute;
+        margin-top: 10%;
+        bottom: 20px;
+        left: 46%;
+        text-align: center;
+    }
+    .product-img {
+        grid-row: 1/3;
+    }
+    .product-name {
+        grid-column: 2/span 2;
+    }
+    .product-qty {
+        grid-column: 4/span 1;
+        grid-row: 1/2;
+    }
+    .product-size {
+        grid-column: 5/span 1;
+        grid-row: 1/2;
+    }
+    .product-price {
+        grid-column: 6/span 1;
+        grid-row: 1/2;
+    }
+    .discard {
+        grid-column: 7/span 1;
+        grid-row: 1/2;
+    }
+    nav{
+        display: none;
+    }
+}
